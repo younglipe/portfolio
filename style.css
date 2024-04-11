@@ -308,7 +308,7 @@
   
   form input::placeholder,
   textarea::placeholder {
-    color: var(--color-golden-150);
+    color: var(--color-light-50);
   }
   
   form textarea {

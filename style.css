@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+:root {
+    --color-dark-50: #1a1a1a;
+    --color-dark-100: #0a0a0a;
+    --color-dark-150: #000000;
+  
+    --color-light-0: #e1e1e1aa;
+    --color-light-50: #e1e1e1;
+    --color-light-100: #d6d6d6;
+    --color-light-150: #cccccc;
+  
+    --color-golden-50: #d9a521;
+    --color-golden-100: #cc9b1f;
+    --color-golden-150: #bf911d;
+  }
+  
+  /*Gerais*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+  }
+  
+  body {
+    background-color: var(--color-dark-150);
+    height: 100vh;
+  }
+  
+  .interface {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .btn_contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-golden-50);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  
+  button:hover,
+  form .btn_enviar input:hover {
+    box-shadow: 0px 0px 8px var(--color-golden-50);
+    transform: scale(1.02);
+  }
+  
+  h2.title {
+    color: var(--color-light-50);
+    font-size: 38px;
+    text-align: center;
+  }
+  
+  h2.title span {
+    color: var(--color-golden-50);
+  }
+  
+  /* Cabeçalho*/
+  
+  header {
+    padding: 40px 4%;
+  }
+  
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a {
+    display: inline-block;
+    color: var(--color-light-0);
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  header a:hover {
+    color: var(--color-golden-50);
+    transform: scale(1.03);
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  header .btn_contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-golden-50);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  /*HOME*/
+  
+  section.home {
+    padding: 40px 4%;
+  }
+  
+  section.home .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .home .txt_home h1 {
+    color: var(--color-light-50);
+    font-size: 42px;
+    line-height: 40px;
+  }
+  
+  .home .txt_home h1 span {
+    color: var(--color-golden-50);
+  }
+  
+  .home .txt_home p {
+    color: var(--color-light-50);
+    margin: 40px 0px;
+  }
+  
+  .home .img_home img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flutuar {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 30px;
+    }
+  }
+  
+  /* skills*/
+  
+  section.skills {
+    padding: 40px 4%;
+  }
+  
+  section.skills .flex {
+    gap: 60px;
+  }
+  
+  section.skills .skills_box {
+    color: var(--color-light-50);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.5s;
+  }
+  
+  section.skills .skills_box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--color-light-0);
+  }
+  
+  section.skills .skills_box i {
+    font-size: 70px;
+    color: var(--color-golden-50);
+  }
+  
+  section.skills .skills_box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  /*about*/
+  
+  section.about {
+    padding: 80px 4%;
+  }
+  
+  section.about .flex {
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .about .txt_about {
+    color: var(--color-light-50);
+  }
+  
+  .about .txt_about h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .about .txt_about h2 span {
+    display: block;
+    color: var(--color-golden-50);
+  }
+  
+  .about .txt_about p {
+    margin: 20px 0;
+    text-align: justify;
+  }
+  
+  .btn_social a {
+    text-decoration: none;
+  }
+  
+  .btn_social button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-golden-50);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  /*Projetos*/
+  
+  section.project {
+    padding: 80px 4%;
+  }
+  
+  section.project .flex {
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .img_proj {
+    width: 250px;
+    height: 460px;
+    border-radius: 40px;
+    background-color: var(--color-golden-50);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    position: relative;
+  }
+  
+  .img_proj:hover {
+    background-position: 100% 100%;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-light-50);
+    background-color: #000000b8;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  /*contact*/
+  
+  section.contact {
+    padding: 40px 4%;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  form input,
+  textarea {
+    width: 100%;
+    background-color: var(--color-dark-50);
+    border: 0;
+    border-radius: 15px;
+    color: var(--color-light-50);
+    outline: none;
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+  
+  form input::placeholder,
+  textarea::placeholder {
+    color: var(--color-golden-150);
+  }
+  
+  form textarea {
+    resize: none;
+    max-height: 280px;
+  }
+  
+  form .btn_enviar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  form .btn_enviar input {
+    width: 120px;
+    background-color: var(--color-golden-50);
+    color: var(--color-dark-150);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  /*footer*/
+  
+  footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+  }
+  
+  footer .flex {
+    justify-content: space-between;
+  }
+  
+  footer .line_footer {
+    padding: 20px 0;
+  }
+  
+  .borda {
+    border-top: 2px solid var(--color-golden-50);
+  }
+  
+  footer .line_footer p i {
+    color: var(--color-golden-50);
+    font-size: 22px;
+  }
+  
+  footer .line_footer p a {
+    color: var(--color-light-50);
+    text-decoration: none;
+  }
+  
